@@ -1,0 +1,193 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section.intro-text {
+    background: #202020;
+
+    h2 {
+        margin: 0 auto;
+        width: 85%;
+        padding: 85px 0;
+        font-size: 36px;
+        color: #fff;
+        line-height: 1.5;
+
+        span {
+            color: #EE5757;
+        }
+    }
+}
+
+section.portfolio-gallery {
+
+    .gallery-container {
+        margin: 0 auto;
+        width: 85%;
+        min-height: 600px;
+
+        .gallery-selection {
+            padding: 50px 0px;
+            display: flex;
+            position: relative;
+            width: fit-content;
+
+            select {
+                padding: 15px 45px 15px 20px;
+                text-transform: uppercase;
+                color: #333;
+                background: transparent;
+                outline: 0;
+                border: 2px solid #333;
+                font-size: 16px;
+                transition: .4s;
+                appearance: none;
+                letter-spacing: 1px;
+
+                > * {
+                    color: #000;
+                    border: none;
+                }
+            }
+
+            .arrow-down {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                transition: .4s;
+                pointer-events: none;
+                
+                ion-icon {
+                    font-size: 24px;
+                    color: #333;
+                }
+            }
+        }
+
+        .gallery-work {
+
+            .gallery-row {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 50px;
+
+                .gallery-heading {
+                    flex-basis: 25%;
+                    position: relative;
+                    height: 350px;
+                    padding-right: 30px;
+    
+                    h3 {
+                        font-size: 3.5rem;
+                        text-transform: uppercase;
+                        color: #333;
+                        transition: .25s;
+                    }
+    
+                    h3::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 5px;
+                        height: 0%;
+                        background: #333;
+                        transition: .5s;
+                    }
+                }
+    
+                .gallery-links {
+                    flex-basis: 70%;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                    grid-gap: 25px;
+                    grid-row-gap: 50px;
+                    margin-bottom: 50px;    
+    
+                    li {
+                        width: 100%;
+    
+                        .tnail-img {
+                            width: 100%;
+                            height: 250px;
+                            position: relative;
+                            cursor: pointer;
+                            transition: .4s;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+    
+                        .tnail-img::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: #cccccc;
+                            opacity: 0.15;
+                        }
+    
+                        .tnail-img:hover {
+                            opacity: 0.75;
+                        }
+    
+                        .tnail-text {
+                            color: #333;
+    
+                            h3 {
+                                margin: 20px 0px 10px;
+                                transition: .3s;
+                            }
+    
+                            p {
+                                color: #333;
+                                font-size: 16px;
+                                line-height: 1.75;
+                            }
+                        }
+                    }
+    
+                    li:hover {
+    
+                        .tnail-text {
+    
+                            h3 {
+                                color: #EE5757;
+                            }
+                        }
+                    }
+
+                    .alt-disp {
+                        color: #333;
+                    }
+                }
+    
+                .gallery-links:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .gallery-row:hover {
+
+                .gallery-heading {
+
+                    h3 {
+                        color: #EE5757;
+                        font-size: 60px;
+                    }
+
+                    h3::after {
+                        height: 100%;
+                        background: #EE5757;
+                    }
+                }
+            }
+        }
+    }
+}
