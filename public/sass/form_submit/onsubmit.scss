@@ -1,0 +1,52 @@
+.modal {
+    margin: 0 auto;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .modal-container {
+        padding: 25px;
+        width: 45%;
+
+        h2 {
+            font-size: 60px;
+            color: #333333;
+        }
+
+        p {
+            color: #333333;
+            font-size: 16px;
+            margin: 10px 0px 30px;
+        }
+
+        .cta {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            a {
+                display: block;
+                border: 1px solid #333;
+                padding: 15px 20px;
+                flex-basis: 30%;
+                text-transform: uppercase;
+                text-align: center;
+                color: #333;
+                position: relative;
+                transition: .6s;
+            }
+
+            a:first-child {
+                margin-right: 15px;
+            }
+
+            a:hover {
+                background: #EE5757;
+                color: #fff;
+                border-color: #EE5757;
+            }
+        }
+    }
+}

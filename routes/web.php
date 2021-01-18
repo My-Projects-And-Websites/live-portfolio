@@ -35,3 +35,7 @@ Route::get('/clear/cache', function() {
     $run = Artisan::call('config:cache');
     return 'Cache cleared.';
 });
+
+Route::get('/success', function() {
+    return view('form_submit.onsubmit');
+})->name('success');

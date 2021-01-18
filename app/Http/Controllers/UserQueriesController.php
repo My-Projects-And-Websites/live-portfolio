@@ -57,7 +57,7 @@ class UserQueriesController extends Controller
         $query->query = request('userquery');
         $query->save();
 
-        return redirect('/contact')->with($data);
+        return redirect(route('success'))->with($data);
     }
 
     /**
