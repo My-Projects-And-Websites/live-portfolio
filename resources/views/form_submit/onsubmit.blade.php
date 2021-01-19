@@ -5,7 +5,7 @@
 @section('content')
     <div class="modal">
         <div class="modal-container">
-            <h2>Speak to you soon.</h2>
+            <h2>Speak to you <span>soon.</span></h2>
             <p>
                 Thank you for submitting your inquiry. We'll get back to you as soon as we can.
             </p>

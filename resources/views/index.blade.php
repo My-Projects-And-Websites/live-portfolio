@@ -16,7 +16,7 @@
                     want to collab on.
                 </p>
                 <div class="cta">
-                    <a href="{{ URL::to('/portfolio') }}">View Portfolio</a>
+                    <a href="{{ URL::to('/portfolio') }}">Discover</a>
                 </div>
             </div>
             <div class="hero-portfolio">

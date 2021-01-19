@@ -23,6 +23,10 @@
   color: #333333;
 }
 
+.modal .modal-container h2 span {
+  color: #EE5757;
+}
+
 .modal .modal-container p {
   color: #333333;
   font-size: 16px;
@@ -45,8 +49,6 @@
   display: block;
   border: 1px solid #333;
   padding: 15px 20px;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
   text-transform: uppercase;
   text-align: center;
   color: #333;

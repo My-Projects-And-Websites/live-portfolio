@@ -9,6 +9,23 @@ p {
     text-align: justify;
 }
 
+a.cta-get-in-touch {
+    display: block;
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: 1px solid #333;
+    color: #333;
+    transition: .6s;
+}
+
+a.cta-get-in-touch:hover {
+    border-color: #EE5757;
+    background: #EE5757;
+    padding: 15px 30px;
+    color: #fff;
+}
+
 section:nth-child(even) {
     background: #202020;
 
@@ -36,28 +53,6 @@ section.intro {
 
             span {
                 color: #EE5757;
-            }
-        }
-    }
-
-    .custom-shape-divider-bottom-1607962756 {
-        position: absolute;
-        bottom: -130px;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg, 180deg);
-
-        svg {
-            position: relative;
-            display: block;
-            width: calc(100%);
-            height: 157px;
-            transform: rotateY(180deg);
-
-            .shape-fill {
-                fill: #202020;
             }
         }
     }
@@ -95,6 +90,15 @@ main {
             .profession-text {
                 flex-basis: 60%;
                 color: #fff;
+
+                a.cta-get-in-touch {
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+    
+                a.cta-get-in-touch:hover {
+                    border-color: #EE5757;
+                }
             }
     
             .profession-img {
