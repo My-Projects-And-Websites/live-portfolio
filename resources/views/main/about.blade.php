@@ -11,7 +11,7 @@
         </div>
     </section>
     <main> 
-        <section class="me">
+        <section class="me" id="intro">
             <div class="me-img">
                 <img src="{{ asset('images/main/about/me.JPG') }}" alt="picture of myself">
             </div>
@@ -33,7 +33,7 @@
                 <a href="{{ URL::to('/contact') }}" class="cta-get-in-touch">Get in Touch</a>
             </div>
         </section>
-        <section class="profession">
+        <section class="profession" id="works">
             <div class="section-container">
                 <div class="profession-text">
                     <p>
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </section>
-        <section class="mastery">
+        <section class="mastery" id="mastery">
             <div class="section-container">
                 <div class="mastery-text">
                     <h3>Mastery</h3>

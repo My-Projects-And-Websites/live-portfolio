@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="gallery-work">
-                <div class="gallery-row">
+                <div class="gallery-row" id="web">
                     <div class="gallery-heading">
                         <h3>{{ __('Web Projects') }}</h3>
                     </div>
@@ -43,7 +43,7 @@
                     @endif
                     </ul>
                 </div>
-                <div class="gallery-row">
+                <div class="gallery-row" id="py">
                     <div class="gallery-heading">
                         <h3>{{ __('Python') }}</h3>
                     </div>
@@ -67,7 +67,7 @@
                     @endif
                     </ul>
                 </div>
-                <div class="gallery-row">
+                <div class="gallery-row" id="cpp">
                     <div class="gallery-heading">
                         <h3>{{ __('C++') }}</h3>
                     </div>

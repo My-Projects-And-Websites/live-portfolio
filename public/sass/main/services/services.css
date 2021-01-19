@@ -1,1 +1,115 @@
-/* No CSS *//*# sourceMappingURL=services.css.map */
+main {
+  margin: 150px auto;
+  width: 80%;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section div[class$="text"] {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  color: #333;
+}
+
+main section div[class$="text"] h2 {
+  font-size: 46px;
+  margin-bottom: 10px;
+  color: #EE5757;
+}
+
+main section div[class$="text"] p {
+  line-height: 1.75;
+  font-size: 18px;
+  text-align: justify;
+  background: #fff;
+  padding-right: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main section div[class$="text"] p[class$="notice"] {
+  width: 100%;
+  color: #c0c0c0;
+  font-style: italic;
+  font-size: 14px;
+  text-align: left;
+}
+
+main section div[class$="text"] p[class$="notice"]:last-child {
+  margin-top: 1em;
+}
+
+main section div[class$="cta"] {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+main section div[class$="cta"] div[class$="cta-img"] {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+main section div[class$="cta"] div[class$="cta-img"] img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section div[class$="cta"] a[class$="cta-link"] {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333;
+  border: 2px solid #333;
+  -webkit-transition: .6s;
+  transition: .6s;
+  border-radius: 5px;
+}
+
+main section div[class$="cta"] a[class$="cta-link"]:hover {
+  background: #EE5757;
+  color: #fff;
+  border-color: #EE5757;
+}
+
+main section.custom-create {
+  margin-bottom: 150px;
+}
+
+main section.custom-create .custom-create-text .custom-create-lang {
+  list-style-type: square;
+  padding-left: 40px;
+  margin: 1em 0;
+}
+
+main section.custom-create .custom-create-text .custom-create-lang li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+main section.live-learning .live-learning-text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+main section.live-learning .live-learning-cta {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+/*# sourceMappingURL=services.css.map */

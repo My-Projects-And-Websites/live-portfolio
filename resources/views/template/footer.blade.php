@@ -3,30 +3,35 @@
         <div class="footer-links">
             <div class="footer-links-pages">
                 <ul>
-                    <!-- <li>
+                    <li>
                         <h3>Services</h3>
                         <div class="link-pages">
-                            <a href="#">Website Creation</a>
-                            <a href="#">Teach Me How</a>
+                            <a href="{{ URL::to('/services') }}">Explore Services</a>
+                            <a href="{{ URL::to('/services') }}#custom-create">Custom Created Website</a>
+                            <a href="{{ URL::to('/services') }}#live-learning">Learn To Code</a>
                         </div>
-                    </li> -->
+                    </li>
                     <li>
                         <h3>About</h3>
                         <div class="link-pages">
-                            <a href="#">Background</a>
-                            <a href="#">Web Dev Freelancer</a>
-                            <a href="#">Web Mastery</a>
+                            <a href="{{ URL::to('/about') }}#intro">Introduction</a>
+                            <a href="{{ URL::to('/about') }}#works">How It Works</a>
+                            <a href="{{ URL::to('/about') }}#mastery">Mastery</a>
                         </div>
                     </li>
                     <li>
                         <h3>Portfolio</h3>
                         <div class="link-pages">
-                            <a href="#gallery">Gallery</a>
+                            <a href="{{ URL::to('/portfolio') }}">Discover Projects</a>
+                            <a href="{{ URL::to('/portfolio') }}#web">Web Projects</a>
+                            <a href="{{ URL::to('/portfolio') }}#py">Python Projects</a>
+                            <a href="{{ URL::to('/portfolio') }}#cpp">C++ Projects</a>
                         </div>
                     </li>
                     <li>
                         <h3>Contact</h3>
                         <div class="link-pages">
+                            <a href="{{ URL::to('/contact') }}">Get in Touch</a>
                             <a href="mailto:jimminciong163@gmail.com">jimminciong163@gmail.com</a>
                             <a href="#">+447415772616</a>
                         </div>

@@ -5,7 +5,7 @@
         </div>
         <nav>
             <ul class="page-links">
-                <!-- <li><a href="{{ URL::to('/services') }}">Services</a></li> -->
+                <li><a href="{{ URL::to('/services') }}">Services</a></li>
                 <li><a href="{{ URL::to('/about') }}">About</a></li>
                 <li><a href="{{ URL::to('/portfolio') }}">Portfolio</a></li>
                 <li><a href="{{ URL::to('/contact') }}">Contact</a></li>
