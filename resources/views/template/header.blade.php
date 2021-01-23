@@ -13,3 +13,13 @@
         </nav>
     </div>
 </header>
+<div class="mbl-header">
+    <div class="inner-container">
+        <div class="logo">
+            <a href="{{ URL::to('/') }}"><h2><span>Jimm</span>Inc</h1></a>
+        </div>
+        <div class="mbl-sidebar-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+    </div>
+</div>

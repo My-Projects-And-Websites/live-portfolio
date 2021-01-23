@@ -28,7 +28,7 @@ section.hero {
 
             p {
                 margin: 15px 0px 30px;
-                color: #b1b1b1;
+                color: #dcdcdc;
                 font-size: 16px;
                 width: 80%;
                 line-height: 1.75;
@@ -103,6 +103,58 @@ section.hero {
                     width: 100%;
                     background: #333;
                     opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section.hero {
+    
+        .hero-container {
+    
+            .hero-text {
+                margin: 50px auto;
+                width: 85%;
+                padding-left: 0;
+    
+                h1 {
+                    font-size: 50px;
+                    min-height: 125px;
+                }
+    
+                p {
+                    margin: 15px 0px 30px;
+                    color: #dcdcdc;
+                    font-size: 16px;
+                    width: 100%;
+                    line-height: 1.75;
+                }
+            }
+    
+            .hero-text::before {
+                display: none;
+            }
+    
+            .hero-portfolio {
+                
+                .hero-gallery {
+                    height: fit-content;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, 50%);
+
+                    div[class^="img"] {
+                        position: relative;
+                        margin: 0px 5px;
+                        height: 200px;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
                 }
             }
         }

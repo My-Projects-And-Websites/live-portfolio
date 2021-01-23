@@ -1,3 +1,34 @@
+.inner-container {
+    margin: 0 auto;
+    padding: 25px 0px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        border: 2px solid #EE5757;
+        padding: 7px 10px;
+
+        a h2 {
+            color: #EE5757;
+            font-size: 20px;
+            transition: .3s;
+            font-weight: 200;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        a h2:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
 header {
     background: #202020;
     position: sticky;
@@ -6,34 +37,6 @@ header {
     border-bottom: 2px solid #222;
 
     .inner-container {
-        margin: 0 auto;
-        padding: 25px 0px;
-        width: 85%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .logo {
-            border: 2px solid #EE5757;
-            padding: 7px 10px;
-
-            a h2 {
-                color: #EE5757;
-                font-size: 20px;
-                transition: .3s;
-                font-weight: 200;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-
-                span {
-                    color: #fff;
-                }
-            }
-
-            a h2:hover {
-                opacity: 0.8;
-            }
-        }
 
         nav .page-links {
             display: flex;
@@ -66,6 +69,32 @@ header {
 
             li:hover::after {
                 width: 100%;
+            }
+        }
+    }
+}
+
+.mbl-header {
+    display: none;
+    background: #202020;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+    .inner-container {
+
+        .logo {
+
+            a h2 {
+                font-size: 24px;
+            }
+        }
+
+        .mbl-sidebar-btn {
+
+            [name="menu-outline"] {
+                font-size: 36px;
+                color: #fff;
             }
         }
     }
@@ -203,7 +232,7 @@ footer {
                 margin: 5px 0px;
             }
 
-            span.legis:last-child:hover {
+            span.legis:hover {
                 color: #fff;
             }
         }
@@ -216,6 +245,69 @@ footer {
             height: 2px;
             width: 100%;
             background: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        display: none;
+    }
+
+    .mbl-header {
+        display: block;
+    }
+
+    footer {
+
+        .footer-container {
+
+            .footer-links {
+                flex-direction: column;
+    
+                .footer-links-pages {
+                    flex-basis: auto;
+                    margin-bottom: 35px;
+    
+                    ul {
+                        grid-template-columns: 1fr;
+                        grid-row-gap: 25px;
+                        width: 100%;
+    
+                        li {
+    
+                            h3 {
+                                font-size: 30px;
+                                margin-bottom: 10px;
+                            }
+    
+                            .link-pages {
+                                
+                                a {
+                                    margin-bottom: 10px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .footer-law {
+    
+                #copyright {
+                    line-height: 1.75;
+                }
+    
+                span.legis {
+                    color: #dcdcdc;
+                    transition: .3s;
+                    cursor: pointer;
+                    display: block;
+                    font-size: 14px;
+                    margin: 5px 0px;
+                }
+            }
         }
     }
 }
