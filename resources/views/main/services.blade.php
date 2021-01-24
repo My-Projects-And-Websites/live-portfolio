@@ -8,22 +8,23 @@
             <div class="custom-create-text">
                 <h2 class="custom-create-heading">Custom Created Website</h2>
                 <p>
-                    A custom created website is made by writing code and is built
-                    from scratch using the fundamental languages such as HTML, CSS,
-                    JavaScript and many other languages. The MERN stack is coming 
-                    soon! If you prefer a framework to be used, I'll be using Laravel.
+                    Need a website for your business? Or for your portfolio? You
+                    have come to the right place. JIMMINC specialises in creating
+                    web applications according to your needs. All I'll need to
+                    proceed with your website is a brief detail on what you want
+                    to be created then I will handle things from there. 
                     <br>
-                    These are the available languages to build your customised website:
+                    These are included for this package:
                 </p>
-                <ul class="custom-create-lang">
-                    <li>Fundamentals: HTML5 | CSS3 | JavaScript (Must Have)</li>
-                    <li>SCSS</li>
-                    <li>jQuery</li>
-                    <li>PHP</li>
+                <ul class="custom-create-package">
+                    <li>Content Creation</li>
+                    <li>Search Engine Optimisation</li>
+                    <li>Stunning Images</li>
+                    <li>Device Responsiveness</li>
                 </ul>
                 <p class="custom-create-notice">
-                    * Note: This package is fully customisable and it's up to clients whether
-                    they would like the Laravel framework to be used on their website.
+                    * Note: This package is fully customisable. Clients, you're suggestions
+                    are freely welcome.
                 </p>
             </div>
             <div class="custom-create-cta">
@@ -35,7 +36,7 @@
         </section>
         <section class="live-learning" id="live-learning">
             <div class="live-learning-text">
-                <h2 class="live-learning-heading">Train To Be A Full Stack</h2>
+                <h2 class="live-learning-heading">Full Stack 101</h2>
                 <p>
                     Always wanted to learn how to make a website? Has it always been your dream
                     to learn how to code? You have come to the right place. I will train you and transform

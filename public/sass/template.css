@@ -101,6 +101,55 @@ header .inner-container nav .page-links li:hover::after {
   color: #fff;
 }
 
+.sidebar {
+  width: 275px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: #333;
+  padding: 50px 0px;
+  display: none;
+  margin-left: -275px;
+}
+
+.sidebar .sidebar-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar .sidebar-container ul.sidebar-nav li {
+  text-align: center;
+  margin-bottom: 15px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.sidebar .sidebar-container ul.sidebar-nav li a {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.sidebar .sidebar-container p.est {
+  color: #dcdcdc;
+}
+
 footer {
   background: #202020;
   height: -webkit-fit-content;
@@ -282,6 +331,9 @@ footer .footer-container .footer-law::before {
     display: none;
   }
   .mbl-header {
+    display: block;
+  }
+  .sidebar {
     display: block;
   }
   footer .footer-container .footer-links {

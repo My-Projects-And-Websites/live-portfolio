@@ -23,3 +23,14 @@
         </div>
     </div>
 </div>
+<div class="sidebar">
+    <div class="sidebar-container">
+        <ul class="sidebar-nav">
+            <li><a href="{{ URL::to('/services') }}">Services</a></li>
+            <li><a href="{{ URL::to('/about') }}">About</a></li>
+            <li><a href="{{ URL::to('/portfolio') }}">Portfolio</a></li>
+            <li><a href="{{ URL::to('/contact') }}">Contact</a></li>
+        </ul>
+        <p class="est">JIMMINC &copy; 2020</p>
+    </div>
+</div>
