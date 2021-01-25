@@ -40,3 +40,8 @@ Route::get('/clear/cache', function() {
 Route::get('/success', function() {
     return view('form_submit.onsubmit');
 })->name('success');
+
+Route::get('/generate/sitemap', function() {
+    SitemapGenerator::create('https://jimminc.tech/')->writeToFile('sitemap.xml');
+    return "Sitemap generated.";
+})->name('sitemap');
