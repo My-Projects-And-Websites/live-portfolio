@@ -18,7 +18,7 @@
                     <ion-icon name="caret-down-outline"></ion-icon>
                 </div>
             </div>
-            <div class="gallery-work">
+            <div class="gallery-work" data-aos="fade-right" data-aos-duration="1000">
                 <div class="gallery-row" id="web">
                     <div class="gallery-heading">
                         <h3>{{ __('Web Projects') }}</h3>

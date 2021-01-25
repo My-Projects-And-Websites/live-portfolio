@@ -102,3 +102,65 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    main {
+        margin: 50px auto;
+        width: 85%;
+    
+        section {
+            flex-direction: column;
+    
+            div[class$="text"] {
+                flex-basis: auto;
+                text-align: left;
+                margin-bottom: 25px;
+    
+                h2 {
+                    font-size: 36px;
+                    color: #EE5757;
+                    line-height: 1.5;
+                }
+        
+                p {
+                    font-size: 16px;
+                    text-align: justify;
+                    padding-right: 0;
+                }
+            }
+    
+            div[class$="cta"] {
+                flex-basis: auto;
+    
+                a[class$="cta-link"] {
+                    font-size: 16px;
+                }
+            }
+        }
+        
+        section.custom-create {
+            margin-bottom: 100px;
+    
+            .custom-create-text {
+    
+                .custom-create-package {
+                    
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    
+        section.live-learning {
+    
+            .live-learning-text {
+                order: 1;
+            }
+    
+            .live-learning-cta {
+                order: 2;
+            }
+        }
+    }
+}

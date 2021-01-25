@@ -112,4 +112,56 @@ main section.live-learning .live-learning-cta {
       -ms-flex-order: 1;
           order: 1;
 }
+
+@media screen and (max-width: 480px) {
+  main {
+    margin: 50px auto;
+    width: 85%;
+  }
+  main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section div[class$="text"] {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  main section div[class$="text"] h2 {
+    font-size: 36px;
+    color: #EE5757;
+    line-height: 1.5;
+  }
+  main section div[class$="text"] p {
+    font-size: 16px;
+    text-align: justify;
+    padding-right: 0;
+  }
+  main section div[class$="cta"] {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  main section div[class$="cta"] a[class$="cta-link"] {
+    font-size: 16px;
+  }
+  main section.custom-create {
+    margin-bottom: 100px;
+  }
+  main section.custom-create .custom-create-text .custom-create-package li {
+    font-size: 16px;
+  }
+  main section.live-learning .live-learning-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main section.live-learning .live-learning-cta {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
 /*# sourceMappingURL=services.css.map */

@@ -6,21 +6,36 @@
     <section class="intro">
         <div class="section-container">
             <div class="intro-text">
-                <h2>Let's have a <span>chat.</span></h2>
+                <h2>Get in touch: <a href="mailto:jimminciong@jimminc.tech">jimminciong@jimminc.tech</a></h2>
             </div>
         </div>
     </section>
     <section class="contact">
-        <form action="{{ URL::to('/query') }}" method="POST" class="contact-form">
+        <form action="{{ URL::to('/query') }}" method="POST" class="contact-form" data-aos="fade-up" data-aos-duration="1000">
             @csrf
-            <p>Got any questions you want to ask?</p>
-            <input type="text" placeholder="Name..." name="username">
-            <input type="email" placeholder="Email..." name="useremail">
-            <textarea placeholder="Say something..." name="userquery"></textarea>
-            <input type="submit" value="Submit" name="submitBtn">
+            <div class="form-elem">
+                <label for="username">Name:</label>
+                <input type="text" placeholder="Name..." name="username" id="text-input">
+                <small class="text-input-error">Please enter a valid name.</small>
+            </div>
+            <div class="form-elem">
+                <label for="useremail">Email:</label>
+                <input type="email" placeholder="Email..." name="useremail" id="email-input">
+                <small class="email-input-error">Please enter a valid email.</small>
+            </div>
+            <div class="form-elem">
+                <label for="userquery">Message:</label>
+                <textarea placeholder="Say something..." name="userquery" id="msg-input"></textarea>
+                <small class="msg-input-error">Please enter your message.</small>
+            </div>
+            <div class="form-elem">
+                <input type="submit" value="Submit" name="submitBtn">
+            </div>
         </form>
         <div class="contact-img">
             <img src="{{ asset('images/main/contact/tel.jpg') }}" alt="red telephone">
         </div>
     </section>
+
+    <script src="{{ asset('js/validation.js') }}"></script>
 @endsection

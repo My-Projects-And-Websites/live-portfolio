@@ -4,7 +4,7 @@
 
 @section('content')
     <main>
-        <section class="custom-create" id="custom-create">
+        <section class="custom-create" id="custom-create" data-aos="fade-right" data-aos-duration="1000">
             <div class="custom-create-text">
                 <h2 class="custom-create-heading">Custom Created Website</h2>
                 <p>
@@ -19,12 +19,13 @@
                 <ul class="custom-create-package">
                     <li>Content Creation</li>
                     <li>Search Engine Optimisation</li>
-                    <li>Stunning Images</li>
+                    <li>Stunning Imagery</li>
                     <li>Device Responsiveness</li>
+                    <li>Web Hosting</li>
                 </ul>
                 <p class="custom-create-notice">
                     * Note: This package is fully customisable. Clients, you're suggestions
-                    are freely welcome.
+                    and additions are freely welcome.
                 </p>
             </div>
             <div class="custom-create-cta">
@@ -34,7 +35,7 @@
                 <a class="custom-create-cta-link" href="{{ URL::to('/contact') }}">Get in Touch</a>
             </div>
         </section>
-        <section class="live-learning" id="live-learning">
+        <section class="live-learning" id="live-learning" data-aos="fade-left" data-aos-duration="1000">
             <div class="live-learning-text">
                 <h2 class="live-learning-heading">Full Stack 101</h2>
                 <p>
