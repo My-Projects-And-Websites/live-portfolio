@@ -1,4 +1,3 @@
-// TODO: open sidebar function
 $(function() {
     $('.mbl-sidebar-btn').on('click', function() {
         if ($('.sidebar').css("marginLeft") == "-275px") {

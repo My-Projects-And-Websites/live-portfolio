@@ -32,7 +32,7 @@
                         <h3>Contact</h3>
                         <div class="link-pages">
                             <a href="{{ URL::to('/contact') }}">Get in Touch</a>
-                            <a href="mailto:jimminciong163@gmail.com">jimminciong163@gmail.com</a>
+                            <a href="mailto:jimminciong@jimminc.tech">jimminciong@jimminc.tech</a>
                             <a href="#">+447415772616</a>
                         </div>
                     </li>

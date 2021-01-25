@@ -33,7 +33,7 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->from('customer@jiwebservices.com', $this->data['name'])
+        return $this->from('no-reply@jimminc.tech')
         ->replyTo($this->data['email'])
         ->subject('Customer Enquiry')
         ->view('email_temp.dynamic1')
