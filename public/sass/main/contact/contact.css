@@ -17,6 +17,10 @@ section.intro .section-container .intro-text h2 a {
   color: #EE5757;
 }
 
+section.intro .section-container .intro-text h2 a br {
+  display: none;
+}
+
 section.contact {
   margin: 100px auto;
   width: 85%;
@@ -44,23 +48,6 @@ section.contact form {
           flex-direction: column;
   z-index: 1;
   margin-left: 25px;
-}
-
-section.contact form p {
-  margin-bottom: 20px;
-  font-size: 18px;
-  color: #202020;
-  line-height: 1.75;
-  background: #fff;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px 15px;
-  border: 1px solid #dcdcdc;
-}
-
-section.contact form p a {
-  color: #EE5757;
 }
 
 section.contact form .form-elem {
@@ -126,5 +113,48 @@ section.contact .contact-img img {
      object-fit: cover;
   -o-object-position: 0;
      object-position: 0;
+}
+
+@media screen and (max-width: 480px) {
+  section.intro .section-container .intro-text h2 {
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.5;
+  }
+  section.intro .section-container .intro-text h2 a {
+    color: #EE5757;
+  }
+  section.intro .section-container .intro-text h2 a br {
+    display: block;
+  }
+  section.contact {
+    margin: 50px auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.contact form {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+  section.contact form .form-elem label {
+    font-size: 14px;
+  }
+  section.contact form .form-elem input, section.contact form .form-elem textarea {
+    font-size: 14px;
+  }
+  section.contact form .form-elem input[type="submit"] {
+    margin-bottom: 15px;
+  }
+  section.contact .contact-img {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

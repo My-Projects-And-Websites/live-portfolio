@@ -14,6 +14,10 @@ section.intro {
 
                 a {
                     color: #EE5757;
+
+                    br {
+                        display: none;
+                    }
                 }
             }
         }
@@ -34,21 +38,6 @@ section.contact {
         flex-direction: column;
         z-index: 1;
         margin-left: 25px;
-
-        p {
-            margin-bottom: 20px;
-            font-size: 18px;
-            color: #202020;
-            line-height: 1.75;
-            background: #fff;
-            width: fit-content;
-            padding: 10px 15px;
-            border: 1px solid #dcdcdc;
-
-            a {
-                color: #EE5757;
-            }
-        }
 
         .form-elem {
             display: flex;
@@ -104,6 +93,63 @@ section.contact {
             width: 100%;
             object-fit: cover;
             object-position: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section.intro {
+    
+        .section-container {
+    
+            .intro-text {
+
+                h2 {
+                    font-size: 36px;
+                    color: #fff;
+                    line-height: 1.5;
+    
+                    a {
+                        color: #EE5757;
+
+                        br {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    section.contact {
+        margin: 50px auto;
+        justify-content: space-between;
+        flex-direction: column;
+    
+        form {
+            flex-basis: auto;
+            width: 100%;
+            margin-left: 0;
+    
+            .form-elem {
+    
+                label {
+                    font-size: 14px;
+                }
+    
+                input, textarea {
+                    font-size: 14px;
+                }
+        
+                input[type="submit"] {
+                    margin-bottom: 15px;
+                }
+            }
+    
+        }
+    
+        .contact-img {
+            flex-basis: auto;
         }
     }
 }

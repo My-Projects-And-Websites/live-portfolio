@@ -49,7 +49,7 @@ class UserQueriesController extends Controller
             'message' => $request->userquery
         );
 
-        Mail::to('jimminciong@jimminc.tech')->send(new SendMail($data));
+        Mail::to('jimm@jimminc.tech')->send(new SendMail($data));
 
         $query = new UserQuery;
         $query->name = request('username');
