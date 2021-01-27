@@ -20,9 +20,7 @@ class PagesController extends Controller
     }
 
     public function about() {
-        $data['masteries'] = Language::all()->sortByDesc('level');
-
-        return view('main.about', $data);
+        return view('main.about');
     }
 
     public function portfolio() {

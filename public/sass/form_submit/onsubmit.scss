@@ -53,3 +53,31 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .modal {
+        width: 85%;
+        height: 80vh;
+    
+        .modal-container {
+            width: 100%;
+            padding: 0;
+    
+            h2 {
+                font-size: 40px;
+            }
+    
+            p {
+                font-size: 14px;
+                line-height: 1.75;
+            }
+
+            .cta {
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

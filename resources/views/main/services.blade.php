@@ -6,7 +6,7 @@
     <main>
         <section class="custom-create" id="custom-create" data-aos="fade-right" data-aos-duration="1000">
             <div class="custom-create-text">
-                <h2 class="custom-create-heading">Custom Created Website</h2>
+                <h2 class="custom-create-heading">Custom Created Wjimmebsite</h2>
                 <p>
                     Need a website for your business? Or for your portfolio? You
                     have come to the right place. JIMMINC specialises in creating
@@ -17,6 +17,7 @@
                     These are included for this package:
                 </p>
                 <ul class="custom-create-package">
+                    <li>Visual Design</li>
                     <li>Content Creation</li>
                     <li>Search Engine Optimisation</li>
                     <li>Stunning Imagery</li>
@@ -28,11 +29,8 @@
                     and additions are freely welcome.
                 </p>
             </div>
-            <div class="custom-create-cta">
-                <div class="custom-create-cta-img">
-                    <img src="{{ asset('images/main/services/codeIllus.svg') }}" alt="undraw illustration for coding">
-                </div>
-                <a class="custom-create-cta-link" href="{{ URL::to('/contact') }}">Get in Touch</a>
+            <div class="custom-create-cta-img">
+                <img src="{{ asset('images/main/services/codeIllus.svg') }}" alt="undraw illustration for coding">
             </div>
         </section>
         <section class="live-learning" id="live-learning" data-aos="fade-left" data-aos-duration="1000">
@@ -53,11 +51,17 @@
                     * Note: First session is free and clients can book a session that are most suitable to their time.
                 </p>
             </div>
-            <div class="live-learning-cta">
-                <div class="live-learning-cta-img">
-                    <img src="{{ asset('images/main/services/learn2codeIllus.svg') }}" alt="">
-                </div>
-                <a class="live-learning-cta-link" href="{{ URL::to('/contact') }}">Get in Touch</a>
+            <div class="live-learning-cta-img">
+                <img src="{{ asset('images/main/services/learn2codeIllus.svg') }}" alt="">
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="cta-text">
+                <h3>Connect with JIMMINC</h3>
+                <p class="cta-par">Learn, build and reach out to customers around the globe through a website.</p>
+            </div>
+            <div class="cta-link">
+                <a href="{{ URL::to('/contact') }}">Get in Touch</a>
             </div>
         </section>
     </main>

@@ -19,6 +19,7 @@ class CreatePersonalProjectsTable extends Migration
             $table->text('description');
             $table->binary('thumbnail');
             $table->string('language');
+            $table->string('url');
             $table->timestamps();
         });
     }

@@ -24,9 +24,9 @@
                         <h3>{{ __('Web Projects') }}</h3>
                     </div>
                     <ul class="gallery-links">
-                    @if (count($web_apps) > 0) 
+                    @if (count($web_apps) > 0)
                         @foreach($web_apps as $web_app)
-                            <a href="{{ $web_app->thumbnail }}">
+                            <a href="{{ URL::to('/portfolio/') }}/{{ $web_app->id }}">
                                 <li class="{{ $web_app->language }}">
                                     <div class="tnail-img">
                                         <img src="{{ $web_app->thumbnail }}" alt="Thumbnail for the project">

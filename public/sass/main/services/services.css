@@ -1,5 +1,5 @@
 main {
-  margin: 150px auto;
+  margin: 125px auto;
   width: 80%;
 }
 
@@ -50,44 +50,16 @@ main section div[class$="text"] p[class$="notice"]:last-child {
   margin-top: 1em;
 }
 
-main section div[class$="cta"] {
+main section div[class$="cta-img"] {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-}
-
-main section div[class$="cta"] div[class$="cta-img"] {
-  width: 100%;
   margin-bottom: 30px;
 }
 
-main section div[class$="cta"] div[class$="cta-img"] img {
+main section div[class$="cta-img"] img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-main section div[class$="cta"] a[class$="cta-link"] {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 15px 25px;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #333;
-  border: 2px solid #333;
-  -webkit-transition: .6s;
-  transition: .6s;
-  border-radius: 5px;
-}
-
-main section div[class$="cta"] a[class$="cta-link"]:hover {
-  background: #EE5757;
-  color: #fff;
-  border-color: #EE5757;
-}
-
-main section.custom-create {
-  margin-bottom: 150px;
 }
 
 main section.custom-create .custom-create-text .custom-create-package {
@@ -101,6 +73,10 @@ main section.custom-create .custom-create-text .custom-create-package li {
   margin-bottom: 10px;
 }
 
+main section.live-learning {
+  margin: 50px 0;
+}
+
 main section.live-learning .live-learning-text {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -111,6 +87,60 @@ main section.live-learning .live-learning-cta {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+main section.cta-section {
+  background: #fafafa;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main section.cta-section .cta-text {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+main section.cta-section .cta-text h3 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+main section.cta-section .cta-text p.cta-par {
+  background: none;
+}
+
+main section.cta-section .cta-link {
+  margin: 20px 0;
+}
+
+main section.cta-section .cta-link a {
+  display: block;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  color: #333;
+  border: 1px solid #333;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main section.cta-section .cta-link a:hover {
+  background: #EE5757;
+  color: #fff;
+  border-color: #EE5757;
 }
 
 @media screen and (max-width: 480px) {
@@ -147,11 +177,18 @@ main section.live-learning .live-learning-cta {
   main section div[class$="cta"] a[class$="cta-link"] {
     font-size: 16px;
   }
-  main section.custom-create {
-    margin-bottom: 100px;
+  main section.custom-create .custom-create-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   main section.custom-create .custom-create-text .custom-create-package li {
     font-size: 16px;
+  }
+  main section.custom-create .custom-create-cta-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   main section.live-learning .live-learning-text {
     -webkit-box-ordinal-group: 2;
@@ -162,6 +199,43 @@ main section.live-learning .live-learning-cta {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  main section.cta-section {
+    padding: 25px;
+  }
+  main section.cta-section .cta-text {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  main section.cta-section .cta-text h3 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  main section.cta-section .cta-text p.cta-par {
+    background: none;
+    font-size: 14px;
+  }
+  main section.cta-section .cta-link {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin: 0px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  main section.cta-section .cta-link a {
+    display: block;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: #333;
+    border: 1px solid #333;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  main section.cta-section .cta-link a:hover {
+    background: #EE5757;
+    color: #fff;
+    border-color: #EE5757;
   }
 }
 /*# sourceMappingURL=services.css.map */

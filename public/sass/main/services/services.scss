@@ -1,5 +1,5 @@
 main {
-    margin: 150px auto;
+    margin: 125px auto;
     width: 80%;
 
     section {
@@ -39,42 +39,18 @@ main {
             }
         }
 
-        div[class$="cta"] {
+        div[class$="cta-img"] {
             flex-basis: 40%;
+            margin-bottom: 30px;
 
-            div[class$="cta-img"] {
+            img {
                 width: 100%;
-                margin-bottom: 30px;
-
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            a[class$="cta-link"] {
-                display: block;
-                width: 100%;
-                text-align: center;
-                padding: 15px 25px;
-                font-size: 18px;
-                text-transform: uppercase;
-                color: #333;
-                border: 2px solid #333;
-                transition: .6s;
-                border-radius: 5px;
-            }
-
-            a[class$="cta-link"]:hover {
-                background: #EE5757;
-                color: #fff;
-                border-color: #EE5757;
+                object-fit: cover;
             }
         }
     }
     
     section.custom-create {
-        margin-bottom: 150px;
 
         .custom-create-text {
 
@@ -92,6 +68,7 @@ main {
     }
 
     section.live-learning {
+        margin: 50px 0;
 
         .live-learning-text {
             order: 2;
@@ -99,6 +76,49 @@ main {
 
         .live-learning-cta {
             order: 1;
+        }
+    }
+
+    section.cta-section {
+        background: #fafafa;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        .cta-text {
+            flex-basis: auto;
+
+            h3 {
+                font-size: 36px;
+                color: #333;
+                margin-bottom: 10px;
+            }   
+
+            p.cta-par {
+                background: none;
+            }
+        }
+
+        .cta-link {
+            margin: 20px 0;
+
+            a {
+                display: block;
+                padding: 15px 20px;
+                text-transform: uppercase;
+                color: #333;
+                border: 1px solid #333;
+                transition: .3s;
+            }
+
+            a:hover {
+                background: #EE5757;
+                color: #fff;
+                border-color: #EE5757;
+            }
         }
     }
 }
@@ -139,16 +159,20 @@ main {
         }
         
         section.custom-create {
-            margin-bottom: 100px;
     
             .custom-create-text {
+                order: 2;
     
                 .custom-create-package {
-                    
+
                     li {
                         font-size: 16px;
                     }
                 }
+            }
+    
+            .custom-create-cta-img {
+                order: 1;
             }
         }
     
@@ -160,6 +184,46 @@ main {
     
             .live-learning-cta {
                 order: 2;
+            }
+        }
+
+        section.cta-section {
+            padding: 25px;
+    
+            .cta-text {
+                flex-basis: auto;
+    
+                h3 {
+                    font-size: 36px;
+                    color: #333;
+                    margin-bottom: 10px;
+                }   
+    
+                p.cta-par {
+                    background: none;
+                    font-size: 14px;
+                }
+            }
+    
+            .cta-link {
+                flex-basis: auto;
+                margin: 0px;
+                align-self: flex-start;
+    
+                a {
+                    display: block;
+                    padding: 15px 20px;
+                    text-transform: uppercase;
+                    color: #333;
+                    border: 1px solid #333;
+                    transition: .3s;
+                }
+    
+                a:hover {
+                    background: #EE5757;
+                    color: #fff;
+                    border-color: #EE5757;
+                }
             }
         }
     }

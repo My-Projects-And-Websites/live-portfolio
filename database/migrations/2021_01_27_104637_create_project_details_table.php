@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLanguagesTable extends Migration
+class CreateProjectDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class CreateLanguagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('languages', function (Blueprint $table) {
+        Schema::create('project_details', function (Blueprint $table) {
             $table->id();
-            $table->string('language');
-            $table->integer('level');
+            $table->binary('project_image');
+            $table->unsignedBigInteger('project_id');
+            $table->foreign('project_id')
+                  ->references('id')->on('personal_projects')
+                  ->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ class CreateLanguagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('languages');
+        Schema::dropIfExists('project_details');
     }
 }

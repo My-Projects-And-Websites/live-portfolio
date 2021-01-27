@@ -16,7 +16,6 @@
                         <div class="link-pages">
                             <a href="{{ URL::to('/about') }}#intro">Introduction</a>
                             <a href="{{ URL::to('/about') }}#works">How It Works</a>
-                            <a href="{{ URL::to('/about') }}#mastery">Mastery</a>
                         </div>
                     </li>
                     <li>
@@ -32,7 +31,7 @@
                         <h3>Contact</h3>
                         <div class="link-pages">
                             <a href="{{ URL::to('/contact') }}">Get in Touch</a>
-                            <a href="mailto:jimm@jimminc.tech">jimminciong@jimminc.tech</a>
+                            <a href="mailto:jimm@jimminc.tech">jimm@jimminc.tech</a>
                             <a href="#">+447415772616</a>
                         </div>
                     </li>

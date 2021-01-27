@@ -195,4 +195,56 @@ section.portfolio-gallery .gallery-container .gallery-work .gallery-row:hover .g
   height: 100%;
   background: #EE5757;
 }
+
+@media screen and (max-width: 480px) {
+  section.portfolio-gallery .gallery-container .gallery-selection {
+    width: 100%;
+  }
+  section.portfolio-gallery .gallery-container .gallery-selection select {
+    width: 100%;
+    font-size: 14px;
+  }
+  section.portfolio-gallery .gallery-container .gallery-work .gallery-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 50px;
+  }
+  section.portfolio-gallery .gallery-container .gallery-work .gallery-row .gallery-heading {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-right: 0;
+    margin-bottom: 25px;
+  }
+  section.portfolio-gallery .gallery-container .gallery-work .gallery-row .gallery-heading h3 {
+    font-size: 30px;
+  }
+  section.portfolio-gallery .gallery-container .gallery-work .gallery-row .gallery-heading h3::after {
+    display: none;
+  }
+  section.portfolio-gallery .gallery-container .gallery-work .gallery-row .gallery-links {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+    grid-row-gap: 30px;
+  }
+  section.portfolio-gallery .gallery-container .gallery-work .gallery-row .gallery-links li .tnail-text {
+    color: #333;
+  }
+  section.portfolio-gallery .gallery-container .gallery-work .gallery-row .gallery-links li .tnail-text h3 {
+    margin: 20px 0px 5px;
+  }
+  section.portfolio-gallery .gallery-container .gallery-work .gallery-row .gallery-links li .tnail-text p {
+    font-size: 14px;
+  }
+  section.portfolio-gallery .gallery-container .gallery-work .gallery-row:hover .gallery-heading h3 {
+    font-size: 36px;
+  }
+}
 /*# sourceMappingURL=portfolio.css.map */

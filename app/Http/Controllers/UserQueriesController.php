@@ -43,6 +43,12 @@ class UserQueriesController extends Controller
             'userquery' => 'required'
         ]);
 
+        $query = new UserQuery;
+        $query->name = request('username');
+        $query->email = request('useremail');
+        $query->query = request('userquery');
+        $query->save();
+
         $data = array(
             'name' => $request->username,
             'email' => $request->useremail,
@@ -50,12 +56,6 @@ class UserQueriesController extends Controller
         );
 
         Mail::to('jimm@jimminc.tech')->send(new SendMail($data));
-
-        $query = new UserQuery;
-        $query->name = request('username');
-        $query->email = request('useremail');
-        $query->query = request('userquery');
-        $query->save();
 
         return redirect(route('success'))->with($data);
     }

@@ -66,4 +66,25 @@
   color: #fff;
   border-color: #EE5757;
 }
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 85%;
+    height: 80vh;
+  }
+  .modal .modal-container {
+    width: 100%;
+    padding: 0;
+  }
+  .modal .modal-container h2 {
+    font-size: 40px;
+  }
+  .modal .modal-container p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  .modal .modal-container .cta a {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=onsubmit.css.map */
