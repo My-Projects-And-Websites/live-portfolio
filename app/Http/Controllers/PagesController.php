@@ -30,11 +30,11 @@ class PagesController extends Controller
         ->where('language', 'web')
         ->get();
 
-        $data['pythons'] = PersonalProject::select('title', 'description', 'thumbnail', 'language')
+        $data['pythons'] = PersonalProject::select('id', 'title', 'description', 'thumbnail', 'language')
         ->where('language', 'py')
         ->get();
 
-        $data['cpps'] = PersonalProject::select('title', 'description', 'thumbnail', 'language')
+        $data['cpps'] = PersonalProject::select('id', 'title', 'description', 'thumbnail', 'language')
         ->where('language', 'cpp')
         ->get();
 

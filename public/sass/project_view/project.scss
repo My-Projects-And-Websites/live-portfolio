@@ -1,5 +1,4 @@
 main {
-    background: #202020;
 
     .project-container {
         margin: 0 auto;
@@ -15,10 +14,13 @@ main {
             .project-img {
                 width: 100%;
                 margin-bottom: 25px;
+                border-radius: 5px;
+                border: 1px solid #202020;
     
                 img {
                     width: 100%;
                     object-fit: cover;
+                    border-radius: 5px;
                 }
             }
 
@@ -30,10 +32,10 @@ main {
         .project-right-col {
             flex-basis: 30%;
             padding: 25px;
-            border-radius: 10px;
+            border-radius: 5px;
             background: #333;
             position: sticky;
-            top: 50px;
+            top: 100px;
 
             .project-text {
                 margin-bottom: 15px;
@@ -68,6 +70,43 @@ main {
                 a:hover {
                     background: #EE5757;
                     border-color: #EE5757;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+
+        .project-container {
+            flex-direction: column;
+    
+            .project-left-col {
+                flex-basis: auto;
+                order: 2;
+            }
+    
+            .project-right-col {
+                flex-basis: auto;
+                order: 1;
+                position: relative;
+                margin-bottom: 15px;
+                top: 0;
+    
+                .project-text {
+                    
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                .project-view {
+
+                    a {
+                        font-size: 14px;
+                        padding: 10px 20px;
+                    }
                 }
             }
         }

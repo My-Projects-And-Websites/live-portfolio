@@ -6,7 +6,7 @@
     <main>
         <section class="custom-create" id="custom-create" data-aos="fade-right" data-aos-duration="1000">
             <div class="custom-create-text">
-                <h2 class="custom-create-heading">Custom Created Wjimmebsite</h2>
+                <h2 class="custom-create-heading">Custom Created Website</h2>
                 <p>
                     Need a website for your business? Or for your portfolio? You
                     have come to the right place. JIMMINC specialises in creating

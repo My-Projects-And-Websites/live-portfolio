@@ -26,7 +26,7 @@
                     <ul class="gallery-links">
                     @if (count($web_apps) > 0)
                         @foreach($web_apps as $web_app)
-                            <a href="{{ URL::to('/portfolio/') }}/{{ $web_app->id }}">
+                            <a href="{{ URL::to('/portfolio') }}/{{ $web_app->id }}">
                                 <li class="{{ $web_app->language }}">
                                     <div class="tnail-img">
                                         <img src="{{ $web_app->thumbnail }}" alt="Thumbnail for the project">
@@ -50,7 +50,7 @@
                     <ul class="gallery-links">
                     @if (count($pythons) > 0)
                         @foreach($pythons as $python)
-                            <a href="{{ $python->thumbnail }}">
+                            <a href="{{ URL::to('/portfolio') }}/{{ $python->id }}">
                                 <li class="{{ $python->language }}">
                                     <div class="tnail-img">
                                         <img src="{{ $python->thumbnail }}" alt="Thumbnail for the project">
@@ -74,7 +74,7 @@
                     <ul class="gallery-links">
                     @if (count($cpps) > 0) 
                         @foreach($cpps as $cpp)
-                            <a href="{{ $cpp->thumbnail }}">
+                            <a href="{{ URL::to('/portfolio') }}/{{ $cpp->id }}">
                                 <li class="{{ $cpp->language }}">
                                     <div class="tnail-img">
                                         <img src="{{ $cpp->thumbnail }}" alt="Thumbnail for the project">

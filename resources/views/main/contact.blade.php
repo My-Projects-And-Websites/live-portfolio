@@ -6,7 +6,7 @@
     <section class="intro">
         <div class="section-container">
             <div class="intro-text">
-                <h2>Get in touch: <a href="mailto:jimminciong@jimminc.tech">jimm<br>@jimminc.tech</a></h2>
+                <h2>Get in touch: <a href="mailto:jimm@jimminc.tech">jimm<br>@jimminc.tech</a></h2>
             </div>
         </div>
     </section>

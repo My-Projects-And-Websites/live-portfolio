@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ asset('sass/project_view/project.css') }}">
 
-    <title>{{ config('app.name', "JimmInc Web Services") }}</title>
+@extends('template')
 
-    <link rel="stylesheet" href="{{ asset('sass/project_view/project.css') }}">
-    <link rel="stylesheet" href="{{ asset('sass/global.css') }}">
-    <link rel="icon" href="{{ asset('images/fav3.png') }}">
-</head>
-<body>
+@section('content')
     <main>
         <div class="project-container">
             <div class="project-left-col">
@@ -25,11 +17,12 @@
                     <h2>{{ $project->project->title }}</h2>
                     <p>{{ $project->project->description }}</p>
                 </div>
+                @isset($project->project->url)
                 <div class="project-view">
                     <a href="{{ $project->project->url }}">Visit</a>
                 </div>
+                @endisset
             </div>
         </div>
     </main>
-</body>
-</html>
+@endsection
