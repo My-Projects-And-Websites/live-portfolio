@@ -2,6 +2,8 @@
 
 @extends('template')
 
+@section('title', 'Contact')
+
 @section('content')
     <section class="intro">
         <div class="section-container">

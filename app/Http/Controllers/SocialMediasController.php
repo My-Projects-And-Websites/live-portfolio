@@ -15,7 +15,7 @@ class SocialMediasController extends Controller
     }
 
     public function linkedin() {
-        return redirect('https://www.linkedin.com/in/jimm-inciong-5a65b8174/');
+        return redirect('https://www.linkedin.com/company/jimminc-web-services');
     }
 
     public function github() {

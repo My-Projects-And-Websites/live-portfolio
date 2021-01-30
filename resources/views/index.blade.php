@@ -2,6 +2,8 @@
 
 @extends('template')
 
+@section('title', 'Web Professional At Your Service')
+
 @section('content')
     <section class="hero">
         <div class="hero-container">
@@ -40,4 +42,7 @@
             </div>
         </form>
     </section> -->
+
+    <script src="{{ asset('js/typewriterjs-master/dist/core.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/typewriter.js') }}"></script>
 @endsection

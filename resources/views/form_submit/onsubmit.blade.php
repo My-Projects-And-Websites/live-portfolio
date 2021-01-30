@@ -2,6 +2,8 @@
 
 @extends('template')
 
+@section('title', 'Thank You')
+
 @section('content')
     <div class="modal">
         <div class="modal-container">

@@ -2,6 +2,8 @@
 
 @extends('template')
 
+@section('title', 'Project')
+
 @section('content')
     <main>
         <div class="project-container">

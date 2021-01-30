@@ -2,6 +2,8 @@
 
 @extends('template')
 
+@section('title', 'Portfolio')
+
 @section('content')
     <section class="intro-text">
         <h2>Welcome to my collection of <span>works.</span></h2>

@@ -2,6 +2,8 @@
 
 @extends('template')
 
+@section('title', 'Services')
+
 @section('content')
     <main>
         <section class="custom-create" id="custom-create" data-aos="fade-right" data-aos-duration="1000">

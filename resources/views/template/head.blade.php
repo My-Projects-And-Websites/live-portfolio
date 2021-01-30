@@ -12,6 +12,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>{{ config('app.name', 'Jimm Inciong') }}</title>
+    <title>{{ config('app.name', 'JIMMINC Web Services') }} | @yield('title')</title>
 </head>
 <body>
