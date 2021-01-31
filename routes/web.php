@@ -19,6 +19,7 @@ Route::get('/services', 'App\Http\Controllers\PagesController@services');
 Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::get('/portfolio', 'App\Http\Controllers\PagesController@portfolio');
 Route::get('/contact', 'App\Http\Controllers\PagesController@contact');
+Route::get('/blogs', 'App\Http\Controllers\PagesController@blogs');
 
 Route::get('/portfolio/{id}', 'App\Http\Controllers\ProjectController@project');
 

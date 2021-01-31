@@ -15,6 +15,10 @@ class PagesController extends Controller
         return view('index', $data);
     }
 
+    public function blogs() {
+        return view('main.blogs');
+    }
+
     public function services() {
         return view('main.services');
     }
