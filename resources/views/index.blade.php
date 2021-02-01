@@ -32,16 +32,22 @@
             </div>
         </div>
     </section>
-    <!-- <section class="subscribe">
-        <h3>Subscribe for updates!</h3>
-        <form action="{{ URL::to('/sub') }}" method="POST" class="subscribe-form">
-            <div class="subscribe-input">
-                @csrf
-                <input type="text" placeholder="Enter your email here..." name="subEmail">
-                <input type="submit" value="Subscribe" name="subSubmit">
+    <section class="testimonials">
+        @foreach($testimonials as $testimonial)
+        <div class="testimonials-container">
+            <div class="testimonials-text">
+                <blockquote>"{{ $testimonial->testimonial }}"</blockquote>
             </div>
-        </form>
-    </section> -->
+            <div class="testimonials-details">
+                <div class="testimonials-details-text">                
+                    <h3>{{ $testimonial->fname }} {{ $testimonial->lname }}</h3>
+                    <small>{{ $testimonial->role }} at {{ $testimonial->company }}</small>
+                </div>
+                <a class="testimonials-details-url" href="{{ $testimonial->company_url }}" rel="nofollow">Visit</a>
+            </div>
+        </div>
+        @endforeach
+    </section>
 
     <script src="{{ asset('js/typewriterjs-master/dist/core.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/typewriter.js') }}"></script>

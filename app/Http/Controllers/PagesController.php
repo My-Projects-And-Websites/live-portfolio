@@ -6,17 +6,19 @@ use Illuminate\Http\Request;
 use App\Models\Image;
 use App\Models\Language;
 use App\Models\PersonalProject;
+use App\Models\Testimonial;
 
 class PagesController extends Controller
 {
     public function index() {
         $data['images'] = Image::all();
+        $data['testimonials'] = Testimonial::all();
 
         return view('index', $data);
     }
 
     public function blogs() {
-        return view('main.blogs');
+        return view('main.blogs', $data);
     }
 
     public function services() {

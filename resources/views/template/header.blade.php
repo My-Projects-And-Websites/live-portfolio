@@ -1,8 +1,10 @@
 <header>
     <div class="inner-container">
-        <div class="logo">
-            <a href="{{ URL::to('/') }}"><h2><span>Jimm</span>Inc</h1></a>
-        </div>
+        <a href="{{ URL::to('/') }}">
+            <div class="logo">
+                <h2><span>Jimm</span>Inc</h1>
+            </div>
+        </a>
         <nav>
             <ul class="page-links">
                 <li><a href="{{ URL::to('/services') }}">Services</a></li>
