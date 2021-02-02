@@ -101,40 +101,80 @@ section.hero .hero-container .hero-text::before {
   }
 }
 
-section.hero .hero-container .hero-portfolio {
-  position: relative;
-  -webkit-transition: 2s;
-  transition: 2s;
+section.latest-blogs {
+  background: #202020;
+  padding-bottom: 50px;
 }
 
-section.hero .hero-container .hero-portfolio .hero-gallery {
-  height: 500px;
+section.latest-blogs .blogs-container {
+  margin: 0 auto;
+  width: 85%;
+  background: #232323;
+  padding: 50px;
+}
+
+section.latest-blogs .blogs-container h2 {
+  font-size: 36px;
+  color: #fafafa;
+}
+
+section.latest-blogs .blogs-container .blogs {
+  margin: 25px 0 35px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 25px;
+}
+
+section.latest-blogs .blogs-container .blogs a.go-to-blog .blog .blog-img {
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section.hero .hero-container .hero-portfolio .hero-gallery div[class^="img"] {
-  position: relative;
-  margin: 0px 5px;
-}
-
-section.hero .hero-container .hero-portfolio .hero-gallery div[class^="img"] img {
+section.latest-blogs .blogs-container .blogs a.go-to-blog .blog .blog-img img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-section.hero .hero-container .hero-portfolio .hero-gallery div[class^="img"]::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #333;
-  opacity: 0.8;
+section.latest-blogs .blogs-container .blogs a.go-to-blog .blog h3.blog-title {
+  color: #EE5757;
+  margin: 15px 0 5px;
+  font-size: 20px;
+}
+
+section.latest-blogs .blogs-container .blogs a.go-to-blog .blog p.blog-desc {
+  color: #dcdcdc;
+  line-height: 1.5;
+}
+
+section.latest-blogs .blogs-container a.blog-cta {
+  display: block;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+section.latest-blogs .blogs-container a.blog-cta:hover {
+  background: #EE5757;
+  border-color: #EE5757;
+  padding: 15px 30px;
 }
 
 section.testimonials {

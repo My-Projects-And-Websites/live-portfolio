@@ -7,6 +7,7 @@ use App\Models\Image;
 use App\Models\Language;
 use App\Models\PersonalProject;
 use App\Models\Testimonial;
+use App\Models\Blog;
 
 class PagesController extends Controller
 {
@@ -14,10 +15,15 @@ class PagesController extends Controller
         $data['images'] = Image::all();
         $data['testimonials'] = Testimonial::all();
 
+        $data['blogs_index'] = Blog::all()->take(3);
+
         return view('index', $data);
     }
 
+    // TODO: configure model to view with blogs data
     public function blogs() {
+        $data['blogs'] = Blog::all();
+
         return view('main.blogs', $data);
     }
 

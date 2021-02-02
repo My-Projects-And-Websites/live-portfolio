@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=blogs.css.map */
+section.intro {
+  padding: 85px 0px;
+  background: #202020;
+}
+
+section.intro .intro-text {
+  margin: 0 auto;
+  width: 85%;
+}
+
+section.intro .intro-text h2 {
+  color: #fff;
+  font-size: 36px;
+}
+
+section.intro .intro-text h2 span {
+  color: #EE5757;
+}
+/*# sourceMappingURL=blogs.css.map */

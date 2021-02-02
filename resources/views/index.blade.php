@@ -21,15 +21,25 @@
                     <a href="{{ URL::to('/portfolio') }}">Discover</a>
                 </div>
             </div>
-            <div class="hero-portfolio">
-                <div class="hero-gallery">
-                    @foreach($images as $image)
-                    <div class="{{ $image->classNo }}">
-                        <img src="{{ $image->image }}" alt="$image->title">
+        </div>
+    </section>
+    <section class="latest-blogs">
+        <div class="blogs-container">
+            <h2>Latest Blogs</h2>
+            <div class="blogs">
+                @foreach($blogs_index as $blog)
+                <a href="{{ URL::to('/blog') }}/{{ $blog->id }}" class="go-to-blog">
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="{{ $blog->blog_img }}" alt="introduction to JIMMINC Web Services">
+                        </div>
+                        <h3 class="blog-title">{{ $blog->title }}</h3>
+                        <p class="blog-desc">{{ $blog->blog_desc }}</p>
                     </div>
-                    @endforeach
-                </div>
+                </a>
+                @endforeach
             </div>
+            <a href="{{ URL::to('/blogs') }}" class="blog-cta">See All</a>
         </div>
     </section>
     <section class="testimonials">

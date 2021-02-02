@@ -21,7 +21,8 @@ Route::get('/portfolio', 'App\Http\Controllers\PagesController@portfolio');
 Route::get('/contact', 'App\Http\Controllers\PagesController@contact');
 Route::get('/blogs', 'App\Http\Controllers\PagesController@blogs');
 
-Route::get('/portfolio/{id}', 'App\Http\Controllers\ProjectController@project');
+Route::get('/portfolio/{id}', 'App\Http\Controllers\ProjectsController@project');
+Route::get('/blog/{id}', 'App\Http\Controllers\BlogsController@blog');
 
 Route::get('/download/{file}', 'App\Http\Controllers\DownloadsController@download');
 
