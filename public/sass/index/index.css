@@ -285,6 +285,22 @@ section.testimonials .testimonials-container .testimonials-details::after {
   section.hero .hero-container .hero-portfolio .hero-gallery div[class^="img"] {
     height: 200px;
   }
+  section.latest-blogs .blogs-container {
+    width: 85%;
+    padding: 25px;
+  }
+  section.latest-blogs .blogs-container h2 {
+    font-size: 26px;
+  }
+  section.latest-blogs .blogs-container .blogs {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 25px;
+  }
+  section.latest-blogs .blogs-container .blogs a.go-to-blog .blog h3.blog-title {
+    font-size: 20px;
+  }
   section.testimonials {
     margin: 100px 0px;
   }

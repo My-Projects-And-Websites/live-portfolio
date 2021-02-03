@@ -62,3 +62,47 @@ section.blog {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    section.blog {
+    
+        .blog-container {
+            padding: 25px;
+            width: 85%;
+    
+            .blog-title {
+    
+                h2 {
+                    font-size: 26px;
+                }
+    
+                small {
+                    font-size: 14px;
+                }
+            }
+    
+            .blog-img {
+                margin: 25px 0px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .main-blog {
+                margin-bottom: 40px;
+            }
+    
+            .blog-socials {
+    
+                a {
+                    margin-right: 20px;
+    
+                    ion-icon {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

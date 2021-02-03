@@ -43,4 +43,11 @@
   line-height: 1.5;
   color: #333;
 }
+
+@media screen and (max-width: 480px) {
+  .main-blog-section .blog-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
 /*# sourceMappingURL=blogs.css.map */

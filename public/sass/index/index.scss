@@ -77,7 +77,6 @@ section.hero {
     }
 }
 
-// TODO: finish styling for latest blogs page on index
 section.latest-blogs {
     background: #202020;
     padding-bottom: 50px;
@@ -255,6 +254,34 @@ section.testimonials {
 
                     div[class^="img"] {
                         height: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.latest-blogs {
+    
+        .blogs-container {
+            width: 85%;
+            padding: 25px;
+    
+            h2 {
+                font-size: 26px;
+            }
+    
+            .blogs {
+                grid-template-columns: 1fr;
+                grid-column-gap: 0;
+                grid-row-gap: 25px;
+    
+                a.go-to-blog {
+    
+                    .blog {
+    
+                        h3.blog-title {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
