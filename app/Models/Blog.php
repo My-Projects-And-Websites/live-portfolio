@@ -9,8 +9,4 @@ class Blog extends Model
 {
     protected $table = "blogs";
     public $primaryKey = 'id';
-
-    public function blog_details(){
-        return $this->hasMany('App\Models\BlogDetails');
-   }
 }

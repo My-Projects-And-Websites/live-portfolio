@@ -1,1 +1,67 @@
-/* No CSS *//*# sourceMappingURL=blog_details.css.map */
+section.blog .blog-container {
+  margin: 75px auto;
+  padding: 75px;
+  width: 70%;
+  background: #fff;
+  border: 1px solid #202020;
+}
+
+section.blog .blog-container .blog-title h2 {
+  color: #EE5757;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+section.blog .blog-container .blog-title small {
+  color: #333;
+  font-size: 16px;
+}
+
+section.blog .blog-container .blog-img {
+  margin: 25px 0px;
+}
+
+section.blog .blog-container .blog-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.blog .blog-container .main-blog {
+  margin-bottom: 50px;
+}
+
+section.blog .blog-container .main-blog p {
+  line-height: 1.75;
+  color: #333;
+  text-align: justify;
+}
+
+section.blog .blog-container .blog-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.blog .blog-container .blog-socials a {
+  display: block;
+  margin-right: 25px;
+  color: #333;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+section.blog .blog-container .blog-socials a ion-icon {
+  font-size: 26px;
+}
+
+section.blog .blog-container .blog-socials a:hover {
+  color: #EE5757;
+}
+/*# sourceMappingURL=blog_details.css.map */

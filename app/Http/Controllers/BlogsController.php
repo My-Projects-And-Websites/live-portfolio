@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\BlogDetails;
+use App\Models\Blog;
 
 class BlogsController extends Controller
 {
-    public function blog(Request $request, $id) {
-        $data['blogs'] = BlogDetails::all();
+    public function show(Request $request, $id) {
+        $data['blogs'] = Blog::find($id);
 
-        return view('blog_details.details', $data);
+        return view('blog_temp.blog', $data);
     }
 }

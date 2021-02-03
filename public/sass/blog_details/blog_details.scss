@@ -1,0 +1,64 @@
+section.blog {
+    
+    .blog-container {
+        margin: 75px auto;
+        padding: 75px;
+        width: 70%;
+        background: #fff;
+        border: 1px solid #202020;
+
+        .blog-title {
+
+            h2 {
+                color: #EE5757;
+                font-size: 36px;
+                margin-bottom: 5px;
+            }
+
+            small {
+                color: #333;
+                font-size: 16px;
+            }
+        }
+
+        .blog-img {
+            margin: 25px 0px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .main-blog {
+            margin-bottom: 50px;
+
+            p {
+                line-height: 1.75;
+                color: #333;
+                text-align: justify;
+            }
+        }
+
+        .blog-socials {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            a {
+                display: block;
+                margin-right: 25px;
+                color: #333;
+                transition: .4s;
+
+                ion-icon {
+                    font-size: 26px;
+                }
+            }
+
+            a:hover {
+                color: #EE5757;
+            }
+        }
+    }
+}
