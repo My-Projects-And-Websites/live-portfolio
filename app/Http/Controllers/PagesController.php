@@ -12,17 +12,16 @@ use App\Models\Blog;
 class PagesController extends Controller
 {
     public function index() {
-        $data['images'] = Image::all();
-        $data['testimonials'] = Testimonial::all();
+        $data['testimonials'] = Testimonial::get();
 
-        $data['blogs_index'] = Blog::all()->take(3);
+        $data['blogs_index'] = Blog::take(3)->get();
 
         return view('index', $data);
     }
 
     // TODO: configure model to view with blogs data
     public function blogs() {
-        $data['blogs'] = Blog::all();
+        $data['blogs'] = Blog::get();
 
         return view('main.blogs', $data);
     }

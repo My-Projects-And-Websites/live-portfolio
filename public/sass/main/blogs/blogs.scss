@@ -1,19 +1,40 @@
-// TODO: finish blogs page styling
+.main-blog-section {
 
-section.intro {
-    padding: 85px 0px;
-    background: #202020;
-    
-    .intro-text {
-        margin: 0 auto;
+    .blog-container {
+        margin: 50px auto;
         width: 85%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 25px;
 
-        h2 {
-            color: #fff;
-            font-size: 36px;
+        div[class$="main"] {
 
-            span {
-                color: #EE5757;
+            .blog-img {
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .blog-text {
+                margin: 10px 0px;
+
+                h3 {
+                    margin-bottom: 10px;
+                    font-size: 22px;
+                    color: #EE5757;
+                }
+
+                p {
+                    line-height: 1.5;
+                    color: #333;
+                }
             }
         }
     }
