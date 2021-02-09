@@ -20,6 +20,17 @@ section.intro {
                     }
                 }
             }
+
+            p {
+                margin-top: 15px;
+                color: #fafafa;
+                line-height: 1.75;
+                font-size: 18px;
+
+                span {
+                    color: #EE5757;
+                }
+            }
         }
     }
 }
@@ -130,6 +141,13 @@ section.contact {
             flex-basis: auto;
             width: 100%;
             margin-left: 0;
+
+            .form-text {
+    
+                p {
+                    font-size: 14px;
+                }
+            }
     
             .form-elem {
     

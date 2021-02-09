@@ -18,6 +18,10 @@ class SocialMediasController extends Controller
         return redirect('https://www.linkedin.com/company/jimminc-web-services');
     }
 
+    public function facebook() {
+        return redirect('https://www.facebook.com/jimmincwebservices');
+    }
+
     public function github() {
         return redirect('https://github.com/My-Projects-And-Websites');
     }

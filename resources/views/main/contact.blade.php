@@ -9,6 +9,7 @@
         <div class="section-container">
             <div class="intro-text">
                 <h2>Get in touch: <a href="mailto:jimm@jimminc.tech">jimm<br>@jimminc.tech</a></h2>
+                <p>If you prefer via messages, get in touch with me at: <span>07415772616</span></p>
             </div>
         </div>
     </section>

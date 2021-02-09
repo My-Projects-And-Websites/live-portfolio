@@ -28,6 +28,7 @@ Route::get('/blog/{id}', 'App\Http\Controllers\BlogsController@show');
 Route::get('/instagram', 'App\Http\Controllers\SocialMediasController@instagram');
 Route::get('/twitter', 'App\Http\Controllers\SocialMediasController@twitter');
 Route::get('/linkedin', 'App\Http\Controllers\SocialMediasController@linkedin');
+Route::get('/facebook', 'App\Http\Controllers\SocialMediasController@facebook');
 Route::get('/github', 'App\Http\Controllers\SocialMediasController@github');
 
 Route::post('/sub', 'App\Http\Controllers\UserEmailsController@store');

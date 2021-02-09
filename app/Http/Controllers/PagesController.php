@@ -14,14 +14,14 @@ class PagesController extends Controller
     public function index() {
         $data['testimonials'] = Testimonial::get();
 
-        $data['blogs_index'] = Blog::take(3)->get();
+        $data['blogs_index'] = Blog::take(3)->get()->sortByDesc('id');
 
         return view('index', $data);
     }
 
     // TODO: configure model to view with blogs data
     public function blogs() {
-        $data['blogs'] = Blog::get();
+        $data['blogs'] = Blog::get()->sortByDesc('id');
 
         return view('main.blogs', $data);
     }

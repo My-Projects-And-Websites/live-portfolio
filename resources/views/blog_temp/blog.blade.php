@@ -21,10 +21,9 @@
                 <a href="{{ URL::to('/instagram') }}"><ion-icon name="logo-instagram"></ion-icon></a>
                 <a href="{{ URL::to('/twitter') }}"><ion-icon name="logo-twitter"></ion-icon></a>
                 <a href="{{ URL::to('/linkedin') }}"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="{{ URL::to('/facebook') }}"><ion-icon name="logo-facebook"></ion-icon></a>
                 <a href="{{ URL::to('/github') }}"><ion-icon name="logo-github"></ion-icon></a>
             </div>
         </div>
     </section>
-
-    <script src="{{ asset('js/escape-text.js') }}"></script>
 @endsection

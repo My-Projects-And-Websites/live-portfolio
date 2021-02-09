@@ -24,6 +24,7 @@
 }
 
 .main-blog-section .blog-container div[class$="main"] .blog-img img {
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

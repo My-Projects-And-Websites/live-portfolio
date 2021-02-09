@@ -21,6 +21,17 @@ section.intro .section-container .intro-text h2 a br {
   display: none;
 }
 
+section.intro .section-container .intro-text p {
+  margin-top: 15px;
+  color: #fafafa;
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+section.intro .section-container .intro-text p span {
+  color: #EE5757;
+}
+
 section.contact {
   margin: 100px auto;
   width: 85%;
@@ -142,6 +153,9 @@ section.contact .contact-img img {
         flex-basis: auto;
     width: 100%;
     margin-left: 0;
+  }
+  section.contact form .form-text p {
+    font-size: 14px;
   }
   section.contact form .form-elem label {
     font-size: 14px;

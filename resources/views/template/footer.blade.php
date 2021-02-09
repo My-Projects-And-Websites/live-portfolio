@@ -55,6 +55,11 @@
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </div>
                     </a>
+                    <a href="{{ URL::to('/facebook') }}">
+                        <div class="footer-sp-link-case">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </div>
+                    </a>
                     <a href="{{ URL::to('/github') }}">
                         <div class="footer-sp-link-case">
                             <ion-icon name="logo-github"></ion-icon>
